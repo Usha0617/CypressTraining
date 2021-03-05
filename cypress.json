@@ -1,5 +1,7 @@
 {
     "watchForFileChanges" : false,
     "reporter"  : "cypress-mochawesome-reporter",
-    "baseurl"   :  "https://reqres.in/api"
+    "baseurl"   :  "https://reqres.in/api",
+    "projectId": "girhr5",
+    "experimentalStudio" : true
 }

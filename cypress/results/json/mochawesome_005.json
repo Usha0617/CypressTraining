@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-05T05:44:05.492Z",
+    "end": "2021-03-05T05:44:10.643Z",
+    "duration": 5151,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2256a1ec-48d8-45d9-b9d8-0e24baf9df93",
+      "title": "",
+      "fullFile": "cypress\\integration\\basic.ts",
+      "file": "cypress\\integration\\basic.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Demo Test",
+          "fullTitle": "Demo Test",
+          "timedOut": null,
+          "duration": 27,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.log('Working Fine');",
+          "err": {},
+          "uuid": "84ac4a7d-3a6c-459d-913f-b0733a6e087d",
+          "parentUUID": "2256a1ec-48d8-45d9-b9d8-0e24baf9df93",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "AssertionValidation Demo",
+          "fullTitle": "AssertionValidation Demo",
+          "timedOut": null,
+          "duration": 2653,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit(\"https://example.cypress.io/\");\ncy.contains('get').click();\ncy.get('#query-btn').should('contain', 'Button')\n    .should('have.class', 'query-btn')\n    .should('be.visible')\n    .should('be.enabled');\ncy.get('#query-btn').invoke('attr', 'id').should('equal', 'query-btn');\ncy.get('#query-btn')\n    .should('contain', 'Button')\n    .should('have.class', 'query-btn');\nexpect(true).to.be.true;\nvar name = 'cypress';\nexpect(name).to.be.equal('cypress');\nassert.equal(44, 44, 'Not Equal');",
+          "err": {},
+          "uuid": "bac3801f-f601-4aef-afe1-d2d384914618",
+          "parentUUID": "2256a1ec-48d8-45d9-b9d8-0e24baf9df93",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "84ac4a7d-3a6c-459d-913f-b0733a6e087d",
+        "bac3801f-f601-4aef-afe1-d2d384914618"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 2680,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
